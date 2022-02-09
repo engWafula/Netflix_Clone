@@ -36,17 +36,19 @@ import { login, logout,selectUser } from '../features/counter/userSlice';
         return (
           <div className="app">
                   <Router>
-                      {
-                          !user?(<Login/>):
-                          (  <Switch>
+//                       {
+//                           !user?(<Login/>):
+//                           (  
+                             <Switch>
                           <Route  exact path="/">
                           <HomeScreen/>
                             </Route> 
-                            <Route  path="/profile">
-                               <Profile/>
-                              </Route>
-                        </Switch>)
-                      }
+//                             <Route  path="/profile">
+//                                <Profile/>
+//                               </Route>
+                        </Switch>
+//                           )
+//                       }
                 
                   </Router>
               
